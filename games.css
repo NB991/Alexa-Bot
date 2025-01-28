@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    direction: ltr;
+    background-color: black;
+    color: #000;
+}
+
+.header {
+    background: #282828;
+    color: white;
+    font-family: 'Courier New', Monospace;
+    padding: 10px;
+    text-align: center;
+}
+
+.header button {
+    float: left;
+    font-size: 20px;
+    background: #282828;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.games-container {
+    text-align: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.games-container h2 {
+    color: cyan;
+    text-align: center;
+    text-decoration: underline;
+    display: inline;
+    margin-top: 50px;
+}
+
+.games-container p {
+    margin-top: 15px;
+    color: white;
+}
