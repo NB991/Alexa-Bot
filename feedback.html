@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="header">
-        <a href="index.html"><button>←</button></a><h1>🔍 Feedback</h1>
+        <button class="show-name" onclick="window.location='index.html' ">←</button><h1>🔍 Feedback</h1>
     </div>
 
     <div class="container">
-        <form id="feedback-form" action="/submit-feedback" method="POST">
+        <form id="feedback-form" action="https://getform.io/k/ojxhxuj" method="POST">
 
             <div class="form-section">
                 <label for="rating">Overall bot rating:</label>
@@ -51,30 +51,5 @@
                 </p>
             </div>
         </div>
-
-        <script>
-            document.querySelectorAll('input[name="issue"]').forEach(function (input) {
-                input.addEventListener('change', function () {
-                    var problemSection = document.getElementById('problem-section');
-                    if (document.getElementById('issue_yes').checked) {
-                        problemSection.style.display = 'block';
-                    } else {
-                        problemSection.style.display = 'none';
-                    }
-                });
-            });
-
-
-            document.getElementById('feedback-form').addEventListener('submit', function (e) {
-                var feedback = document.getElementById('feedback').value.trim();
-                var rating = document.getElementById('rating').value.trim();
-
-                if (!feedback || !rating) {
-                    e.preventDefault();
-                    alert('Please fill out all required fields.');
-                }
-            });
-        </script>
-
     </body>
-</html>
+    </html>
