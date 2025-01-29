@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Page | Admin</title>
+    <link rel="stylesheet" href="api-admin.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>API Keys</h1>
+        <p>
+            (Admin Pages)
+        </p>
+    </div>
+
+    <div class="main-content">
+        <div class="used">
+            <h2>Used Service</h2>
+            <p>
+                • Gimini API Keys
+                <br> • Telegram API Keys
+                <br> • Telegram Bot Token
+            </p>
+        </div>
+
+
+        <br><br><br><br><div class="keys-container">
+            <div class="key-box">
+                <button class="copy-button" onclick="copyKey('gimini-key')">Copy</button>
+                <h4>Gimini API Key</h4>
+                <p id="gimini-key">
+                    AIzaSyD98n_Hui3OP4JyPneWJVpXLNU1GZH4VX8
+                </p>
+            </div>
+
+            <div class="key-box">
+                <button class="copy-button" onclick="copyKey('bot-token')">Copy</button>
+                <h4>Telegram Bot Token</h4>
+                <p id="bot-token">
+                    7735133328:AAFEMmO_qAw3tzLJxLfO950qKThHsmJsotQ
+                </p>
+            </div>
+
+            <div class="key-box">
+                <button class="copy-button" onclick="copyKey('telegram-api')">Copy</button>
+                <h4>Telegram API</h4>
+                <p id="telegram-api">
+                    callTelegramAPI('sendMessage', $messageParams);
+                </p>
+                </div>
+                
+            <div class="key-box">
+                <button class="copy-button" onclick="copyKey('telegram-api')">Copy</button>
+                <h4>Payment API</h4>
+                <p id="payment-api">
+                    1877036958:TEST:dd47dc97a4cd10ad934da4cc3a7702db052d73b7
+                </p>
+        </div>
+    </div>
+
+    <div class="toolbar">
+        <button class="toolbar-button" onclick="window.location='home-admin.html'">Home</button>
+        <button class="toolbar-button" onclick="window.location='games-admin.html'">Games</button>
+        <button class="toolbar-button" onclick="window.location='host-admin.html'">Host</button>
+        <button class="toolbar-button" onclick="window.location='api-admin.html'">APIs</button>
+    </div>
+</body>
+<script src="copy-text.js"></script>
+</html>
