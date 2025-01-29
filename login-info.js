@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             showPopup("Access granted", "success", false);
 
             setTimeout(function () {
-                window.location.href = 'Admin-home.html';
+                window.location.href = 'home-admin.html';
             }, 3000);
         } else {
             failedAttempts++;
