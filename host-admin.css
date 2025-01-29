@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    direction: ltr;
+    background-color: black;
+    color: #000;
+}
+
+.header {
+    background: rgba(40, 40, 40, 0.5);
+    color: #fff;
+    font-family: 'Courier New', Monospace;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.header p {
+    color: gold;
+}
+
+.main-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.main-content h2 {
+    color: white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.main-content p {
+    color: grey;
+    margin: 15px;
+}
+
+.main-content span {
+    color: cyan;
+    font-weight: bold;
+}
+
+.main-content span1 {
+    color: red;
+    font-weight: bold;
+}
+
+.main-content a {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+.main-content li {
+    color: grey;
+    margin: 25px;
+}
+.maintenance-tools {
+    text-align: center;
+}
+
+.toolbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(40, 40, 40, 0.5);
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+
+}
+
+.toolbar-button {
+    background: #333;
+    border: 1px solid #555;
+    color: white;
+    font-size: 16px;
+    padding: 10px 12px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.toolbar-button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.toolbar-button:active {
+    transform: scale(0.98);
+}
